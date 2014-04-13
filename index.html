@@ -1,20 +1,6 @@
-<html>
-  <head>
-    <link href="css/normalize.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="css/stylesheet.css" media="all" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="//use.typekit.net/gdg3bym.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="nav">
-        <ul>
-          <li class="logo"><a href="">brunchclub</a></li>
-          <li class="link"><a href="">About</a></li>
-          <li class="link"><a href="">HowTo</a></li>
-          <li class="link"><a href="">Locations</a></li>
-        </ul>
-      </div>
+---
+---
+{% include header.html %}
       <div class="location">
         <h1 class="name">Straw</h1>
         <div class="address">
@@ -41,15 +27,4 @@
             src="https://www.google.com/maps/embed/v1/place?q=Straw%2C%20Octavia%20Boulevard%2C%20San%20Francisco%2C%20CA%2C%20United%20States&key=AIzaSyCa3sjbKdCXBeiIMHEKT2rzSpZKLPsx89c"></iframe>
         </div>
       </div>
-      <div class="footer">
-        <ul>
-          <li class="copyright"><a
-            href="https://github.com/brunchclub/brunchclub.github.io/blob/master/LICENSE">Copyright &copy; 2014, MIT Licensed</a></li>
-          <li class="code"><a
-            href="https://github.com/brunchclub/brunchclub.github.io">Code on
-            GitHub</a></li>
-        </ul>
-      </div>
-    </div>
-  </body>
-</html>
+{% include footer.html %}
