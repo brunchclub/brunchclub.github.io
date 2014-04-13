@@ -1,0 +1,98 @@
+$body-font-stack: "promxima-nova", sans-serif;
+$display-font-stack: "proxima-nova-soft", sans-serif;
+$font-color: #333;
+$background-color: #eee;
+$header-footer-color: #777;
+$accent-color: yellow;
+
+body {
+  background-color: $background-color;
+  font-family: $body-font-stack;
+  color: $font-color;
+
+  a {
+    text-decoration: none;
+    color: $font-color;
+
+    &:hover {
+      background-color: $accent-color;
+    }
+  }
+
+  .container {
+    width: 512px;
+    margin: 0px auto;
+
+    .nav, .footer {
+      font-family: $display-font-stack;
+      text-transform: lowercase;
+      margin-top: 1em;
+      color: $header-footer-color;
+
+      ul {
+        padding: 0;
+        margin: 0;
+        overflow: auto;
+
+        li {
+          display: inline;
+          list-style-type: none;
+        }
+      }
+    }
+
+    .nav {
+      ul {
+        a {
+          color: $header-footer-color;
+        }
+
+        .logo {
+          font-weight: bold;
+          float: left;
+        }
+
+        .link {
+          float: right;
+          padding-left: 1em;
+        }
+      }
+    }
+
+    .footer {
+      margin-bottom: 1em;
+
+      a {
+        color: $header-footer-color;
+      }
+
+      .code {
+        float: right;
+      }
+    }
+
+    .location {
+      font-size: 1.25em;
+
+      .name {
+        font-family: $display-font-stack;
+        font-size: 3em;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+      label {
+        text-transform: uppercase;
+        font-size: .5em;
+        display: block;
+        font-weight: bold;
+        color: $header-footer-color;
+        margin-top: 1.5em;
+      }
+
+      .map {
+        margin-top: 1.5em;
+      }
+    }
+  }
+}
