@@ -1,5 +1,6 @@
 ---
-name: Brunchclub
+name: brunchclub
 markdown: redcarpet
 pygments: true
 exclude: [LICENSE, README.md, Gemfile, Gemfile.lock, Rakefile, stylesheet.scss]
+permalink: /locations/:title
