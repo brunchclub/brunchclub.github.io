@@ -1,9 +1,33 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<div class="location">
+  <h1 class="name">{{ page.name }}</h1>
+  <div class="address">
+    <label>Address</label>
+    {{ page.address }}
+  </div>
 
-<div class="post">
-{{ content }}
+  <div class="link">
+    <label>Link</label>
+    <a href="{{ page.link }}" target="_blank">{{ page.link }}</a>
+  </div>
+
+  <div class="last_visited">
+    <label>Last Visited</label>
+    {% if page.visited == false %}
+      Brunch Club hasn't visited {{ page.name }} yet.
+    {% else %}
+      {{ page.visited | date: "%B %-d, %Y" }}
+    {% endif %}
+  </div>
+
+  <div class="added">
+    <label>Added</label>
+    {{ page.date | date: "%B %-d, %Y" }}
+  </div>
+  <div class="map">
+    <iframe width="512" height="250" frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/place?q={{ page.name }}{{ page.address }}&key=AIzaSyCa3sjbKdCXBeiIMHEKT2rzSpZKLPsx89c"></iframe>
+  </div>
 </div>
