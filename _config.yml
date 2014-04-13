@@ -2,3 +2,4 @@
 name: Brunchclub
 markdown: redcarpet
 pygments: true
+exclude: [LICENSE, README.md, Gemfile, Gemfile.lock, Rakefile, stylesheet.scss]
