@@ -5,6 +5,7 @@ namespace :locations do
   desc "Add a location"
   task :add do
     content = ["---"]
+    content << "layout: post"
 
     print "   Name: "
     content << "name: " + (name = STDIN.gets.chomp)
